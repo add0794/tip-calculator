@@ -3,7 +3,7 @@ const bill = document.getElementById("bill") as HTMLInputElement;
 const tip = document.getElementById("tip") as HTMLInputElement;
 const resultParagraph = document.getElementsByClassName("result")[0] as HTMLParagraphElement;
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (): void => {
     const tipFraction: number = parseFloat(tip.value) * 0.01;
     const billValue: number = parseFloat(bill.value);
 
